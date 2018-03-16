@@ -1,0 +1,15 @@
+{
+  "name": "kwargapi",
+  "version": "1.0.0",
+  "description": "A lightweight node server where your querystring is passed as an object to a module and function specified in your URL path.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/jazzyjackson/kwargapi.git",
+    "type": "git"
+  },
+  "author": "Colten Jackson <jazzyjackson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mime": "^2.2.0"
+  }
+}
