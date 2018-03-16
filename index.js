@@ -32,6 +32,7 @@ http.createServer(async (request, response) => {
         }
     } catch(error){
         response.headersSent || response.setHeader('Content-Type', 'application/json'), response.writeHead(500)
-        response.writable && response.end(JSON.stringify(error))
+        let {code, path, errno, syscall, stack, address, port} = error
+        response.writable && response.end(JSON.stringify({code, path, errno, syscall, stack, address, port}))
     }
 }).listen(process.env.PORT || 80)
