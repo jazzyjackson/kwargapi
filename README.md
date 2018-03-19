@@ -2,7 +2,8 @@
 ### quar gap ee
 #### or "keyword arg API" cuz thats what it is
 
-A small flask server that invokes functions described in URL, passing on querystring as **kwargs
+### Standalone branch
+I'm going to abandon this for now, but I was playing with the idea for this to be a standalone HTTP "Simple Server" that servers static files and gives access to classes, but it would be a little fragile to make secure, and I just kept coming up with more features to add to it, so I want to set it aside and work on master branch: nothing but execute functions
 
 In that case, provide a /call/ route and a /static/ route to provide a simple web server without having to know how to network.
 
